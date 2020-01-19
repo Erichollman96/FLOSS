@@ -10,10 +10,8 @@ The primary function of this software is:
    
 This application was developed using Visual Studio 2019, written in VB.NET, using XAMPP to access MySQL databases.
 
-                                       !!! READ !!!
-###/// IF YOU CANNOT CONNECT TO A SQL/MySQL SERVER THE APPLICATION WILL NOT LET YOU CONTINUE ///###
-                                       !!! READ !!!
-    
+              ###/// IF YOU CANNOT CONNECT TO A SQL/MySQL SERVER THE APPLICATION WILL NOT LET YOU CONTINUE ///###
+
 This application also writes to a CSV file in a specified location.
 
 Certain features require specific naming criteria, this is being worked on...
