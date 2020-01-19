@@ -5,33 +5,33 @@ Imports System.IO
 
 Public Class Form3
     Dim connection As New MySqlConnection("server=localhost; user=root; password=; database=test;")
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Btn_Search.Click
 
         connection.Open()
         Dim queryTable As New DataTable() ' Declares a data table and SQL command
         Dim myCmd As New MySqlCommand()
         myCmd.Connection = connection
-        If String.IsNullOrEmpty(cboxClient2.Text) And String.IsNullOrEmpty(cboxSalesPerson2.Text) And String.IsNullOrEmpty(cboxProduct2.Text) Then ' Checks if specified fields have values inserted into them. If no values are present, the fields are not used as conditions in the SQL statement
+        If String.IsNullOrEmpty(Cbox_Client2.Text) And String.IsNullOrEmpty(Cbox_SalesPerson2.Text) And String.IsNullOrEmpty(Cbox_Product2.Text) Then ' Checks if specified fields have values inserted into them. If no values are present, the fields are not used as conditions in the SQL statement
             myCmd.CommandText = " SELECT * FROM test.orders"
-        ElseIf String.IsNullOrEmpty(cboxClient2.Text) And String.IsNullOrEmpty(cboxSalesPerson2.Text) Then
-            myCmd.CommandText = " SELECT * FROM test.orders WHERE Product= '" & cboxProduct2.Text & "' "
-        ElseIf String.IsNullOrEmpty(cboxProduct2.Text) And String.IsNullOrEmpty(cboxSalesPerson2.Text) Then
-            myCmd.CommandText = " SELECT * FROM test.orders WHERE Client= '" & cboxClient2.Text & "' "
-        ElseIf String.IsNullOrEmpty(cboxProduct2.Text) And String.IsNullOrEmpty(cboxClient2.Text) Then
-            myCmd.CommandText = " SELECT * FROM test.orders WHERE SalesPerson= '" & cboxSalesPerson2.Text & "' "
-        ElseIf String.IsNullOrEmpty(cboxProduct2.Text) Then
-            myCmd.CommandText = " SELECT * FROM test.orders WHERE SalesPerson= '" & cboxSalesPerson2.Text & "' AND Client= '" & cboxClient2.Text & "' "
-        ElseIf String.IsNullOrEmpty(cboxClient2.Text) Then
-            myCmd.CommandText = " SELECT * FROM test.orders WHERE SalesPerson= '" & cboxSalesPerson2.Text & "' AND Product= '" & cboxProduct2.Text & "' "
-        ElseIf String.IsNullOrEmpty(cboxSalesPerson2.Text) Then
-            myCmd.CommandText = " SELECT * FROM test.orders WHERE Product= '" & cboxProduct2.Text & "' AND Client= '" & cboxClient2.Text & "' "
+        ElseIf String.IsNullOrEmpty(Cbox_Client2.Text) And String.IsNullOrEmpty(Cbox_SalesPerson2.Text) Then
+            myCmd.CommandText = " SELECT * FROM test.orders WHERE Product= '" & Cbox_Product2.Text & "' "
+        ElseIf String.IsNullOrEmpty(Cbox_Product2.Text) And String.IsNullOrEmpty(Cbox_SalesPerson2.Text) Then
+            myCmd.CommandText = " SELECT * FROM test.orders WHERE Client= '" & Cbox_Client2.Text & "' "
+        ElseIf String.IsNullOrEmpty(Cbox_Product2.Text) And String.IsNullOrEmpty(Cbox_Client2.Text) Then
+            myCmd.CommandText = " SELECT * FROM test.orders WHERE SalesPerson= '" & Cbox_SalesPerson2.Text & "' "
+        ElseIf String.IsNullOrEmpty(Cbox_Product2.Text) Then
+            myCmd.CommandText = " SELECT * FROM test.orders WHERE SalesPerson= '" & Cbox_SalesPerson2.Text & "' AND Client= '" & Cbox_Client2.Text & "' "
+        ElseIf String.IsNullOrEmpty(Cbox_Client2.Text) Then
+            myCmd.CommandText = " SELECT * FROM test.orders WHERE SalesPerson= '" & Cbox_SalesPerson2.Text & "' AND Product= '" & Cbox_Product2.Text & "' "
+        ElseIf String.IsNullOrEmpty(Cbox_SalesPerson2.Text) Then
+            myCmd.CommandText = " SELECT * FROM test.orders WHERE Product= '" & Cbox_Product2.Text & "' AND Client= '" & Cbox_Client2.Text & "' "
         Else
-            myCmd.CommandText = " SELECT * FROM test.orders WHERE SalesPerson= '" & cboxSalesPerson2.Text & "' AND Product= '" & cboxProduct2.Text & "' AND Client= '" & cboxClient2.Text & "' "
+            myCmd.CommandText = " SELECT * FROM test.orders WHERE SalesPerson= '" & Cbox_SalesPerson2.Text & "' AND Product= '" & Cbox_Product2.Text & "' AND Client= '" & Cbox_Client2.Text & "' "
         End If
 
         Dim myAdapater1 As New MySqlDataAdapter(myCmd) 'Fills the data grid with the results of one of the above SQL commands
         myAdapater1.Fill(queryTable)
-        dgridSQL.DataSource = queryTable
+        Datagrid_SQL.DataSource = queryTable
         connection.Close()
     End Sub
 
