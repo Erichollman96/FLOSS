@@ -22,62 +22,62 @@ Partial Class Form3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.dgridSQL = New System.Windows.Forms.DataGridView()
-        Me.btnSearch = New System.Windows.Forms.Button()
-        Me.cboxSalesPerson2 = New System.Windows.Forms.ComboBox()
-        Me.cboxProduct2 = New System.Windows.Forms.ComboBox()
-        Me.cboxClient2 = New System.Windows.Forms.ComboBox()
+        Me.Datagrid_SQL = New System.Windows.Forms.DataGridView()
+        Me.Btn_Search = New System.Windows.Forms.Button()
+        Me.Cbox_SalesPerson2 = New System.Windows.Forms.ComboBox()
+        Me.Cbox_Product2 = New System.Windows.Forms.ComboBox()
+        Me.Cbox_Client2 = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        CType(Me.dgridSQL, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Lbl_FormInstructions = New System.Windows.Forms.Label()
+        CType(Me.Datagrid_SQL, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'dgridSQL
+        'Datagrid_SQL
         '
-        Me.dgridSQL.AllowUserToOrderColumns = True
-        Me.dgridSQL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgridSQL.Location = New System.Drawing.Point(12, 187)
-        Me.dgridSQL.Name = "dgridSQL"
-        Me.dgridSQL.Size = New System.Drawing.Size(492, 161)
-        Me.dgridSQL.TabIndex = 0
+        Me.Datagrid_SQL.AllowUserToOrderColumns = True
+        Me.Datagrid_SQL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Datagrid_SQL.Location = New System.Drawing.Point(12, 187)
+        Me.Datagrid_SQL.Name = "Datagrid_SQL"
+        Me.Datagrid_SQL.Size = New System.Drawing.Size(492, 161)
+        Me.Datagrid_SQL.TabIndex = 0
         '
-        'btnSearch
+        'Btn_Search
         '
-        Me.btnSearch.Location = New System.Drawing.Point(176, 144)
-        Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(75, 23)
-        Me.btnSearch.TabIndex = 1
-        Me.btnSearch.Text = "Search"
-        Me.btnSearch.UseVisualStyleBackColor = True
+        Me.Btn_Search.Location = New System.Drawing.Point(176, 144)
+        Me.Btn_Search.Name = "Btn_Search"
+        Me.Btn_Search.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Search.TabIndex = 1
+        Me.Btn_Search.Text = "Search"
+        Me.Btn_Search.UseVisualStyleBackColor = True
         '
-        'cboxSalesPerson2
+        'Cbox_SalesPerson2
         '
-        Me.cboxSalesPerson2.FormattingEnabled = True
-        Me.cboxSalesPerson2.Location = New System.Drawing.Point(155, 22)
-        Me.cboxSalesPerson2.Name = "cboxSalesPerson2"
-        Me.cboxSalesPerson2.Size = New System.Drawing.Size(121, 21)
-        Me.cboxSalesPerson2.Sorted = True
-        Me.cboxSalesPerson2.TabIndex = 4
+        Me.Cbox_SalesPerson2.FormattingEnabled = True
+        Me.Cbox_SalesPerson2.Location = New System.Drawing.Point(155, 22)
+        Me.Cbox_SalesPerson2.Name = "Cbox_SalesPerson2"
+        Me.Cbox_SalesPerson2.Size = New System.Drawing.Size(121, 21)
+        Me.Cbox_SalesPerson2.Sorted = True
+        Me.Cbox_SalesPerson2.TabIndex = 4
         '
-        'cboxProduct2
+        'Cbox_Product2
         '
-        Me.cboxProduct2.FormattingEnabled = True
-        Me.cboxProduct2.Location = New System.Drawing.Point(155, 96)
-        Me.cboxProduct2.Name = "cboxProduct2"
-        Me.cboxProduct2.Size = New System.Drawing.Size(121, 21)
-        Me.cboxProduct2.Sorted = True
-        Me.cboxProduct2.TabIndex = 5
+        Me.Cbox_Product2.FormattingEnabled = True
+        Me.Cbox_Product2.Location = New System.Drawing.Point(155, 96)
+        Me.Cbox_Product2.Name = "Cbox_Product2"
+        Me.Cbox_Product2.Size = New System.Drawing.Size(121, 21)
+        Me.Cbox_Product2.Sorted = True
+        Me.Cbox_Product2.TabIndex = 5
         '
-        'cboxClient2
+        'Cbox_Client2
         '
-        Me.cboxClient2.FormattingEnabled = True
-        Me.cboxClient2.Location = New System.Drawing.Point(155, 59)
-        Me.cboxClient2.Name = "cboxClient2"
-        Me.cboxClient2.Size = New System.Drawing.Size(121, 21)
-        Me.cboxClient2.Sorted = True
-        Me.cboxClient2.TabIndex = 6
+        Me.Cbox_Client2.FormattingEnabled = True
+        Me.Cbox_Client2.Location = New System.Drawing.Point(155, 59)
+        Me.Cbox_Client2.Name = "Cbox_Client2"
+        Me.Cbox_Client2.Size = New System.Drawing.Size(121, 21)
+        Me.Cbox_Client2.Sorted = True
+        Me.Cbox_Client2.TabIndex = 6
         '
         'Label1
         '
@@ -106,44 +106,44 @@ Partial Class Form3
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Product"
         '
-        'Label4
+        'Lbl_FormInstructions
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(134, 128)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(176, 13)
-        Me.Label4.TabIndex = 8
-        Me.Label4.Text = "Leave field empty to search for ""All"""
+        Me.Lbl_FormInstructions.AutoSize = True
+        Me.Lbl_FormInstructions.Location = New System.Drawing.Point(134, 128)
+        Me.Lbl_FormInstructions.Name = "Lbl_FormInstructions"
+        Me.Lbl_FormInstructions.Size = New System.Drawing.Size(176, 13)
+        Me.Lbl_FormInstructions.TabIndex = 8
+        Me.Lbl_FormInstructions.Text = "Leave field empty to search for ""All"""
         '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(545, 381)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Lbl_FormInstructions)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.cboxClient2)
-        Me.Controls.Add(Me.cboxProduct2)
-        Me.Controls.Add(Me.cboxSalesPerson2)
-        Me.Controls.Add(Me.btnSearch)
-        Me.Controls.Add(Me.dgridSQL)
+        Me.Controls.Add(Me.Cbox_Client2)
+        Me.Controls.Add(Me.Cbox_Product2)
+        Me.Controls.Add(Me.Cbox_SalesPerson2)
+        Me.Controls.Add(Me.Btn_Search)
+        Me.Controls.Add(Me.Datagrid_SQL)
         Me.Name = "Form3"
         Me.Text = "Form3"
-        CType(Me.dgridSQL, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Datagrid_SQL, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents dgridSQL As DataGridView
-    Friend WithEvents btnSearch As Button
-    Friend WithEvents cboxSalesPerson2 As ComboBox
-    Friend WithEvents cboxProduct2 As ComboBox
-    Friend WithEvents cboxClient2 As ComboBox
+    Friend WithEvents Datagrid_SQL As DataGridView
+    Friend WithEvents Btn_Search As Button
+    Friend WithEvents Cbox_SalesPerson2 As ComboBox
+    Friend WithEvents Cbox_Product2 As ComboBox
+    Friend WithEvents Cbox_Client2 As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents Lbl_FormInstructions As Label
 End Class
