@@ -8,7 +8,7 @@ The primary function of this software is:
    B) To be a project foundation for users to develop their skills by building off the existing code, 
       adding new functionality as they please
       
-   C) To be reverse-engineered by users as an exercise
+   C) To be reverse-engineered by users
    
    D) Develop error handling / formatting / database connection skills and knowledge
    
