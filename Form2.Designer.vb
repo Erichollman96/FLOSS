@@ -23,9 +23,9 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblUser = New System.Windows.Forms.Label()
-        Me.cboxUser = New System.Windows.Forms.ComboBox()
-        Me.btnConfirm = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
+        Me.Cbox_User = New System.Windows.Forms.ComboBox()
+        Me.Btn_Confirm = New System.Windows.Forms.Button()
+        Me.Btn_Close = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblUser
@@ -37,43 +37,43 @@ Partial Class Form2
         Me.lblUser.TabIndex = 0
         Me.lblUser.Text = "User:"
         '
-        'cboxUser
+        'Cbox_User
         '
-        Me.cboxUser.AllowDrop = True
-        Me.cboxUser.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboxUser.FormattingEnabled = True
-        Me.cboxUser.Location = New System.Drawing.Point(72, 23)
-        Me.cboxUser.Name = "cboxUser"
-        Me.cboxUser.Size = New System.Drawing.Size(121, 21)
-        Me.cboxUser.Sorted = True
-        Me.cboxUser.TabIndex = 1
+        Me.Cbox_User.AllowDrop = True
+        Me.Cbox_User.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Cbox_User.FormattingEnabled = True
+        Me.Cbox_User.Location = New System.Drawing.Point(72, 23)
+        Me.Cbox_User.Name = "Cbox_User"
+        Me.Cbox_User.Size = New System.Drawing.Size(121, 21)
+        Me.Cbox_User.Sorted = True
+        Me.Cbox_User.TabIndex = 1
         '
-        'btnConfirm
+        'Btn_Confirm
         '
-        Me.btnConfirm.Location = New System.Drawing.Point(72, 78)
-        Me.btnConfirm.Name = "btnConfirm"
-        Me.btnConfirm.Size = New System.Drawing.Size(75, 23)
-        Me.btnConfirm.TabIndex = 2
-        Me.btnConfirm.Text = "Confirm"
-        Me.btnConfirm.UseVisualStyleBackColor = True
+        Me.Btn_Confirm.Location = New System.Drawing.Point(72, 78)
+        Me.Btn_Confirm.Name = "Btn_Confirm"
+        Me.Btn_Confirm.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Confirm.TabIndex = 2
+        Me.Btn_Confirm.Text = "Confirm"
+        Me.Btn_Confirm.UseVisualStyleBackColor = True
         '
-        'btnClose
+        'Btn_Close
         '
-        Me.btnClose.Location = New System.Drawing.Point(188, 78)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(75, 23)
-        Me.btnClose.TabIndex = 3
-        Me.btnClose.Text = "Close"
-        Me.btnClose.UseVisualStyleBackColor = True
+        Me.Btn_Close.Location = New System.Drawing.Point(188, 78)
+        Me.Btn_Close.Name = "Btn_Close"
+        Me.Btn_Close.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Close.TabIndex = 3
+        Me.Btn_Close.Text = "Close"
+        Me.Btn_Close.UseVisualStyleBackColor = True
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(315, 124)
-        Me.Controls.Add(Me.btnClose)
-        Me.Controls.Add(Me.btnConfirm)
-        Me.Controls.Add(Me.cboxUser)
+        Me.Controls.Add(Me.Btn_Close)
+        Me.Controls.Add(Me.Btn_Confirm)
+        Me.Controls.Add(Me.Cbox_User)
         Me.Controls.Add(Me.lblUser)
         Me.Name = "Form2"
         Me.Text = "Form2"
@@ -83,7 +83,7 @@ Partial Class Form2
     End Sub
 
     Friend WithEvents lblUser As Label
-    Friend WithEvents cboxUser As ComboBox
-    Friend WithEvents btnConfirm As Button
-    Friend WithEvents btnClose As Button
+    Friend WithEvents Cbox_User As ComboBox
+    Friend WithEvents Btn_Confirm As Button
+    Friend WithEvents Btn_Close As Button
 End Class
