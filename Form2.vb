@@ -5,11 +5,11 @@ Imports System.IO
 
 Public Class Form2
 
-    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles Btn_Close.Click
         Close() ' Closes the window
     End Sub
 
-    Public Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
+    Public Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles Btn_Confirm.Click
         Dim connection As New MySqlConnection("server=localhost; user=root; password=; database=test;")
 
         Try ' Checks the conenction to the database upon user attempting to sign in
@@ -22,27 +22,27 @@ Public Class Form2
 
         End Try
 
-        If cboxUser.Text = "" Then ' Confirms that the user has selected a user from the dropdown menu
+        If Cbox_User.Text = "" Then ' Confirms that the user has selected a user from the dropdown menu
 
             MessageBox.Show("Please select a user from the dropdown list")
 
-        ElseIf (connection.State <> ConnectionState.Closed) And cboxUser.Text <> "" Then ' Checks if the user has a valid connection to the database and has selected a user from the dropdown lost
+        ElseIf (connection.State <> ConnectionState.Closed) And Cbox_User.Text <> "" Then ' Checks if the user has a valid connection to the database and has selected a user from the dropdown lost
 
-            Form1.cboxProduct.Items.AddRange(File.ReadAllLines("C:\Users\erich\Desktop\Misc Data\Products.txt")) ' Adds Products to "Product" dropdown on Form1
-            MessageBox.Show("User signed in as " + cboxUser.Text) ' Confirms that the user has signed in as the user they selected
-            Form1.lblActiveUser.Text = cboxUser.Text '  Enables controls on Form1
-            Form1.btnSignIn.Hide()
-            Form1.lblClient.Enabled = True
-            Form1.lblProduct.Enabled = True
-            Form1.lblTotal.Enabled = True
-            Form1.lblDate.Enabled = True
-            Form1.txtClient.Enabled = True
-            Form1.cboxProduct.Enabled = True
-            Form1.txtTotal.Enabled = True
-            Form1.txtDate.Enabled = True
-            Form1.btnSubmit.Enabled = True
-            Form1.btnViewSales.Enabled = True
-            Form1.btnToday.Enabled = True
+            Form1.Cbox_Product.Items.AddRange(File.ReadAllLines("C:\Users\erich\Desktop\Misc Data\Products.txt")) ' Adds Products to "Product" dropdown on Form1
+            MessageBox.Show("User signed in as " + Cbox_User.Text) ' Confirms that the user has signed in as the user they selected
+            Form1.Lbl_ActiveUser.Text = Cbox_User.Text '  Enables controls on Form1
+            Form1.Btn_SignIn.Hide()
+            Form1.Lbl_Client.Enabled = True
+            Form1.Lbl_Product.Enabled = True
+            Form1.Lbl_Total.Enabled = True
+            Form1.Lbl_Date.Enabled = True
+            Form1.Txt_Client.Enabled = True
+            Form1.Cbox_Product.Enabled = True
+            Form1.Txt_Total.Enabled = True
+            Form1.Txt_Date.Enabled = True
+            Form1.Btn_Submit.Enabled = True
+            Form1.Btn_ViewSales.Enabled = True
+            Form1.Btn_Today.Enabled = True
             Close()
             connection.Close()
         End If
