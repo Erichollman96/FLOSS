@@ -23,191 +23,191 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.txtClient = New System.Windows.Forms.TextBox()
-        Me.txtTotal = New System.Windows.Forms.TextBox()
-        Me.txtDate = New System.Windows.Forms.TextBox()
-        Me.lblClient = New System.Windows.Forms.Label()
-        Me.lblProduct = New System.Windows.Forms.Label()
-        Me.lblTotal = New System.Windows.Forms.Label()
-        Me.lblDate = New System.Windows.Forms.Label()
-        Me.btnSubmit = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
-        Me.btnSignIn = New System.Windows.Forms.Button()
-        Me.lblUser = New System.Windows.Forms.Label()
-        Me.lblActiveUser = New System.Windows.Forms.Label()
+        Me.Txt_Client = New System.Windows.Forms.TextBox()
+        Me.Txt_Total = New System.Windows.Forms.TextBox()
+        Me.Txt_Date = New System.Windows.Forms.TextBox()
+        Me.Lbl_Client = New System.Windows.Forms.Label()
+        Me.Lbl_Product = New System.Windows.Forms.Label()
+        Me.Lbl_Total = New System.Windows.Forms.Label()
+        Me.Lbl_Date = New System.Windows.Forms.Label()
+        Me.Btn_Submit = New System.Windows.Forms.Button()
+        Me.Btn_Close = New System.Windows.Forms.Button()
+        Me.Btn_SignIn = New System.Windows.Forms.Button()
+        Me.Lbl_User = New System.Windows.Forms.Label()
+        Me.Lbl_ActiveUser = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.btnViewSales = New System.Windows.Forms.Button()
-        Me.cboxProduct = New System.Windows.Forms.ComboBox()
-        Me.btnToday = New System.Windows.Forms.Button()
+        Me.Btn_ViewSales = New System.Windows.Forms.Button()
+        Me.Cbox_Product = New System.Windows.Forms.ComboBox()
+        Me.Btn_Today = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'txtClient
+        'Txt_Client
         '
-        Me.txtClient.Enabled = False
-        Me.txtClient.Location = New System.Drawing.Point(87, 38)
-        Me.txtClient.Name = "txtClient"
-        Me.txtClient.Size = New System.Drawing.Size(121, 20)
-        Me.txtClient.TabIndex = 0
+        Me.Txt_Client.Enabled = False
+        Me.Txt_Client.Location = New System.Drawing.Point(87, 38)
+        Me.Txt_Client.Name = "Txt_Client"
+        Me.Txt_Client.Size = New System.Drawing.Size(121, 20)
+        Me.Txt_Client.TabIndex = 0
         '
-        'txtTotal
+        'Txt_Total
         '
-        Me.txtTotal.Enabled = False
-        Me.txtTotal.Location = New System.Drawing.Point(87, 90)
-        Me.txtTotal.Name = "txtTotal"
-        Me.txtTotal.Size = New System.Drawing.Size(121, 20)
-        Me.txtTotal.TabIndex = 2
+        Me.Txt_Total.Enabled = False
+        Me.Txt_Total.Location = New System.Drawing.Point(87, 90)
+        Me.Txt_Total.Name = "Txt_Total"
+        Me.Txt_Total.Size = New System.Drawing.Size(121, 20)
+        Me.Txt_Total.TabIndex = 2
         '
-        'txtDate
+        'Txt_Date
         '
-        Me.txtDate.Enabled = False
-        Me.txtDate.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txtDate.Location = New System.Drawing.Point(87, 116)
-        Me.txtDate.Name = "txtDate"
-        Me.txtDate.Size = New System.Drawing.Size(121, 20)
-        Me.txtDate.TabIndex = 3
+        Me.Txt_Date.Enabled = False
+        Me.Txt_Date.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.Txt_Date.Location = New System.Drawing.Point(87, 116)
+        Me.Txt_Date.Name = "Txt_Date"
+        Me.Txt_Date.Size = New System.Drawing.Size(121, 20)
+        Me.Txt_Date.TabIndex = 3
         '
-        'lblClient
+        'Lbl_Client
         '
-        Me.lblClient.AutoSize = True
-        Me.lblClient.Enabled = False
-        Me.lblClient.Location = New System.Drawing.Point(43, 41)
-        Me.lblClient.Name = "lblClient"
-        Me.lblClient.Size = New System.Drawing.Size(33, 13)
-        Me.lblClient.TabIndex = 4
-        Me.lblClient.Text = "Client"
+        Me.Lbl_Client.AutoSize = True
+        Me.Lbl_Client.Enabled = False
+        Me.Lbl_Client.Location = New System.Drawing.Point(43, 41)
+        Me.Lbl_Client.Name = "Lbl_Client"
+        Me.Lbl_Client.Size = New System.Drawing.Size(33, 13)
+        Me.Lbl_Client.TabIndex = 4
+        Me.Lbl_Client.Text = "Client"
         '
-        'lblProduct
+        'Lbl_Product
         '
-        Me.lblProduct.AutoSize = True
-        Me.lblProduct.Enabled = False
-        Me.lblProduct.Location = New System.Drawing.Point(43, 64)
-        Me.lblProduct.Name = "lblProduct"
-        Me.lblProduct.Size = New System.Drawing.Size(44, 13)
-        Me.lblProduct.TabIndex = 5
-        Me.lblProduct.Text = "Product"
+        Me.Lbl_Product.AutoSize = True
+        Me.Lbl_Product.Enabled = False
+        Me.Lbl_Product.Location = New System.Drawing.Point(43, 64)
+        Me.Lbl_Product.Name = "Lbl_Product"
+        Me.Lbl_Product.Size = New System.Drawing.Size(44, 13)
+        Me.Lbl_Product.TabIndex = 5
+        Me.Lbl_Product.Text = "Product"
         '
-        'lblTotal
+        'Lbl_Total
         '
-        Me.lblTotal.AutoSize = True
-        Me.lblTotal.Enabled = False
-        Me.lblTotal.Location = New System.Drawing.Point(43, 90)
-        Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(31, 13)
-        Me.lblTotal.TabIndex = 6
-        Me.lblTotal.Text = "Total"
+        Me.Lbl_Total.AutoSize = True
+        Me.Lbl_Total.Enabled = False
+        Me.Lbl_Total.Location = New System.Drawing.Point(43, 90)
+        Me.Lbl_Total.Name = "Lbl_Total"
+        Me.Lbl_Total.Size = New System.Drawing.Size(31, 13)
+        Me.Lbl_Total.TabIndex = 6
+        Me.Lbl_Total.Text = "Total"
         '
-        'lblDate
+        'Lbl_Date
         '
-        Me.lblDate.AutoSize = True
-        Me.lblDate.Enabled = False
-        Me.lblDate.Location = New System.Drawing.Point(43, 116)
-        Me.lblDate.Name = "lblDate"
-        Me.lblDate.Size = New System.Drawing.Size(30, 13)
-        Me.lblDate.TabIndex = 7
-        Me.lblDate.Text = "Date"
+        Me.Lbl_Date.AutoSize = True
+        Me.Lbl_Date.Enabled = False
+        Me.Lbl_Date.Location = New System.Drawing.Point(43, 116)
+        Me.Lbl_Date.Name = "Lbl_Date"
+        Me.Lbl_Date.Size = New System.Drawing.Size(30, 13)
+        Me.Lbl_Date.TabIndex = 7
+        Me.Lbl_Date.Text = "Date"
         '
-        'btnSubmit
+        'Btn_Submit
         '
-        Me.btnSubmit.Enabled = False
-        Me.btnSubmit.Location = New System.Drawing.Point(105, 142)
-        Me.btnSubmit.Name = "btnSubmit"
-        Me.btnSubmit.Size = New System.Drawing.Size(75, 23)
-        Me.btnSubmit.TabIndex = 8
-        Me.btnSubmit.Text = "Submit"
-        Me.btnSubmit.UseVisualStyleBackColor = True
+        Me.Btn_Submit.Enabled = False
+        Me.Btn_Submit.Location = New System.Drawing.Point(105, 142)
+        Me.Btn_Submit.Name = "Btn_Submit"
+        Me.Btn_Submit.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Submit.TabIndex = 8
+        Me.Btn_Submit.Text = "Submit"
+        Me.Btn_Submit.UseVisualStyleBackColor = True
         '
-        'btnClose
+        'Btn_Close
         '
-        Me.btnClose.Location = New System.Drawing.Point(287, 262)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(75, 23)
-        Me.btnClose.TabIndex = 9
-        Me.btnClose.Text = "Close"
-        Me.btnClose.UseVisualStyleBackColor = True
+        Me.Btn_Close.Location = New System.Drawing.Point(287, 262)
+        Me.Btn_Close.Name = "Btn_Close"
+        Me.Btn_Close.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Close.TabIndex = 9
+        Me.Btn_Close.Text = "Close"
+        Me.Btn_Close.UseVisualStyleBackColor = True
         '
-        'btnSignIn
+        'Btn_SignIn
         '
-        Me.btnSignIn.Location = New System.Drawing.Point(214, 9)
-        Me.btnSignIn.Name = "btnSignIn"
-        Me.btnSignIn.Size = New System.Drawing.Size(80, 25)
-        Me.btnSignIn.TabIndex = 10
-        Me.btnSignIn.Text = "Sign In"
-        Me.btnSignIn.UseVisualStyleBackColor = True
+        Me.Btn_SignIn.Location = New System.Drawing.Point(214, 9)
+        Me.Btn_SignIn.Name = "Btn_SignIn"
+        Me.Btn_SignIn.Size = New System.Drawing.Size(80, 25)
+        Me.Btn_SignIn.TabIndex = 10
+        Me.Btn_SignIn.Text = "Sign In"
+        Me.Btn_SignIn.UseVisualStyleBackColor = True
         '
-        'lblUser
+        'Lbl_User
         '
-        Me.lblUser.AutoSize = True
-        Me.lblUser.Location = New System.Drawing.Point(12, 9)
-        Me.lblUser.Name = "lblUser"
-        Me.lblUser.Size = New System.Drawing.Size(65, 13)
-        Me.lblUser.TabIndex = 11
-        Me.lblUser.Text = "Active User:"
+        Me.Lbl_User.AutoSize = True
+        Me.Lbl_User.Location = New System.Drawing.Point(12, 9)
+        Me.Lbl_User.Name = "Lbl_User"
+        Me.Lbl_User.Size = New System.Drawing.Size(65, 13)
+        Me.Lbl_User.TabIndex = 11
+        Me.Lbl_User.Text = "Active User:"
         '
-        'lblActiveUser
+        'Lbl_ActiveUser
         '
-        Me.lblActiveUser.AutoSize = True
-        Me.lblActiveUser.Location = New System.Drawing.Point(83, 9)
-        Me.lblActiveUser.Name = "lblActiveUser"
-        Me.lblActiveUser.Size = New System.Drawing.Size(115, 13)
-        Me.lblActiveUser.TabIndex = 12
-        Me.lblActiveUser.Text = "NO USER SELECTED"
+        Me.Lbl_ActiveUser.AutoSize = True
+        Me.Lbl_ActiveUser.Location = New System.Drawing.Point(83, 9)
+        Me.Lbl_ActiveUser.Name = "Lbl_ActiveUser"
+        Me.Lbl_ActiveUser.Size = New System.Drawing.Size(115, 13)
+        Me.Lbl_ActiveUser.TabIndex = 12
+        Me.Lbl_ActiveUser.Text = "NO USER SELECTED"
         '
         'Timer1
         '
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 10000
         '
-        'btnViewSales
+        'Btn_ViewSales
         '
-        Me.btnViewSales.Enabled = False
-        Me.btnViewSales.Location = New System.Drawing.Point(160, 263)
-        Me.btnViewSales.Name = "btnViewSales"
-        Me.btnViewSales.Size = New System.Drawing.Size(106, 23)
-        Me.btnViewSales.TabIndex = 13
-        Me.btnViewSales.Text = "View Sales"
-        Me.btnViewSales.UseVisualStyleBackColor = True
+        Me.Btn_ViewSales.Enabled = False
+        Me.Btn_ViewSales.Location = New System.Drawing.Point(160, 263)
+        Me.Btn_ViewSales.Name = "Btn_ViewSales"
+        Me.Btn_ViewSales.Size = New System.Drawing.Size(106, 23)
+        Me.Btn_ViewSales.TabIndex = 13
+        Me.Btn_ViewSales.Text = "View Sales"
+        Me.Btn_ViewSales.UseVisualStyleBackColor = True
         '
-        'cboxProduct
+        'Cbox_Product
         '
-        Me.cboxProduct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboxProduct.Enabled = False
-        Me.cboxProduct.FormattingEnabled = True
-        Me.cboxProduct.Location = New System.Drawing.Point(87, 63)
-        Me.cboxProduct.Name = "cboxProduct"
-        Me.cboxProduct.Size = New System.Drawing.Size(121, 21)
-        Me.cboxProduct.Sorted = True
-        Me.cboxProduct.TabIndex = 14
+        Me.Cbox_Product.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Cbox_Product.Enabled = False
+        Me.Cbox_Product.FormattingEnabled = True
+        Me.Cbox_Product.Location = New System.Drawing.Point(87, 63)
+        Me.Cbox_Product.Name = "Cbox_Product"
+        Me.Cbox_Product.Size = New System.Drawing.Size(121, 21)
+        Me.Cbox_Product.Sorted = True
+        Me.Cbox_Product.TabIndex = 14
         '
-        'btnToday
+        'Btn_Today
         '
-        Me.btnToday.Enabled = False
-        Me.btnToday.Location = New System.Drawing.Point(214, 116)
-        Me.btnToday.Name = "btnToday"
-        Me.btnToday.Size = New System.Drawing.Size(80, 23)
-        Me.btnToday.TabIndex = 15
-        Me.btnToday.Text = "Today's Date"
-        Me.btnToday.UseVisualStyleBackColor = True
+        Me.Btn_Today.Enabled = False
+        Me.Btn_Today.Location = New System.Drawing.Point(214, 116)
+        Me.Btn_Today.Name = "Btn_Today"
+        Me.Btn_Today.Size = New System.Drawing.Size(80, 23)
+        Me.Btn_Today.TabIndex = 15
+        Me.Btn_Today.Text = "Today's Date"
+        Me.Btn_Today.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(405, 317)
-        Me.Controls.Add(Me.btnToday)
-        Me.Controls.Add(Me.cboxProduct)
-        Me.Controls.Add(Me.btnViewSales)
-        Me.Controls.Add(Me.lblActiveUser)
-        Me.Controls.Add(Me.lblUser)
-        Me.Controls.Add(Me.btnSignIn)
-        Me.Controls.Add(Me.btnClose)
-        Me.Controls.Add(Me.btnSubmit)
-        Me.Controls.Add(Me.lblDate)
-        Me.Controls.Add(Me.lblTotal)
-        Me.Controls.Add(Me.lblProduct)
-        Me.Controls.Add(Me.lblClient)
-        Me.Controls.Add(Me.txtDate)
-        Me.Controls.Add(Me.txtTotal)
-        Me.Controls.Add(Me.txtClient)
+        Me.Controls.Add(Me.Btn_Today)
+        Me.Controls.Add(Me.Cbox_Product)
+        Me.Controls.Add(Me.Btn_ViewSales)
+        Me.Controls.Add(Me.Lbl_ActiveUser)
+        Me.Controls.Add(Me.Lbl_User)
+        Me.Controls.Add(Me.Btn_SignIn)
+        Me.Controls.Add(Me.Btn_Close)
+        Me.Controls.Add(Me.Btn_Submit)
+        Me.Controls.Add(Me.Lbl_Date)
+        Me.Controls.Add(Me.Lbl_Total)
+        Me.Controls.Add(Me.Lbl_Product)
+        Me.Controls.Add(Me.Lbl_Client)
+        Me.Controls.Add(Me.Txt_Date)
+        Me.Controls.Add(Me.Txt_Total)
+        Me.Controls.Add(Me.Txt_Client)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -215,20 +215,20 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents txtClient As TextBox
-    Friend WithEvents txtTotal As TextBox
-    Friend WithEvents txtDate As TextBox
-    Friend WithEvents lblClient As Label
-    Friend WithEvents lblProduct As Label
-    Friend WithEvents lblTotal As Label
-    Friend WithEvents lblDate As Label
-    Friend WithEvents btnSubmit As Button
-    Friend WithEvents btnClose As Button
-    Friend WithEvents btnSignIn As Button
-    Friend WithEvents lblUser As Label
-    Friend WithEvents lblActiveUser As Label
+    Friend WithEvents Txt_Client As TextBox
+    Friend WithEvents Txt_Total As TextBox
+    Friend WithEvents Txt_Date As TextBox
+    Friend WithEvents Lbl_Client As Label
+    Friend WithEvents Lbl_Product As Label
+    Friend WithEvents Lbl_Total As Label
+    Friend WithEvents Lbl_Date As Label
+    Friend WithEvents Btn_Submit As Button
+    Friend WithEvents Btn_Close As Button
+    Friend WithEvents Btn_SignIn As Button
+    Friend WithEvents Lbl_User As Label
+    Friend WithEvents Lbl_ActiveUser As Label
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents btnViewSales As Button
-    Friend WithEvents cboxProduct As ComboBox
-    Friend WithEvents btnToday As Button
+    Friend WithEvents Btn_ViewSales As Button
+    Friend WithEvents Cbox_Product As ComboBox
+    Friend WithEvents Btn_Today As Button
 End Class
