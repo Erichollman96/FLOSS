@@ -1,0 +1,12 @@
+CREATE DATABASE test;
+
+
+CREATE TABLE test.orders (
+    ID int(11) AUTO_INCREMENT,
+    Date date,
+    SalesPerson char(255),
+    Client char(255),
+    Product varchar(255),
+    Total decimal(16,2),
+    PRIMARY KEY (ID)
+);
