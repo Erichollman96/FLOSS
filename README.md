@@ -1,6 +1,17 @@
 # FOSS-sales
 Free Open Source Sales Recording Software.
 
+         ###/// DISCLAIMER ###///
+         
+         THIS CODE IS NOT TO BE USED BY BUSINESSES OR ENTERPRISES AS DEFINED BY THE VISUAL STUDIO COMMUNITY LICENSE.
+         
+         THIS CODE IS NOT FOR SALE. IT IS, AND ALWAYS WILL BE FREE TO USE FOR EDUCATIONAL PURPOSES
+         
+         PLEASE REVIEW THE LICENSING AGREEMENT
+         
+         https://visualstudio.microsoft.com/license-terms/mlt031819/
+        
+
 The primary function of this software is: 
 
    A) To introduce those who wish to understand programs and databases to a (mostly) functional program
