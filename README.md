@@ -19,10 +19,14 @@ This application was developed using Visual Studio 2019, written in VB.NET, usin
 This application also writes to a CSV file in a specified location.
 
 PRIORITY 1-
-Certain features require specific naming criteria, this is being worked on... 
+Certain features require specific naming criteria within the code, this is being worked on... 
+
 1/21/2020 update - operational, doing QA to ensure user errors do not crash the program...
 
+
+
 PRIORITY 2-
+
 Current database structure is flat format. This is to be updated to a star schema...
 
 XAMPP Download: https://www.apachefriends.org/download.html
