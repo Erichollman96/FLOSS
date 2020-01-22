@@ -4,11 +4,11 @@ Imports MySql.Data.MySqlClient
 Imports System.IO
 Public Class Form1
 
-    Dim connection As New MySqlConnection("server=localhost; user=root; password=; database=test;")  ' Connects to MySQL Database. Note the name of your database must match
+    Dim connection As New MySqlConnection("server=localhost; user=root; password=; database=test;")  ' Connects to MySQL Database. ! USER NOTE: YOUR DATABASE NAME MUST MATCH !
 
     Private Sub btnSignIn1_Click(sender As Object, e As EventArgs) Handles Btn_SignIn.Click
 
-        Form2.Cbox_User.Items.AddRange(File.ReadAllLines("C:\Users\erich\Desktop\Misc Data\Users.txt")) ' Generates a list of users to be inserted into dropdown box on Form2 from a text file in a specified file location
+        Form2.Cbox_User.Items.AddRange(File.ReadAllLines("C:\Users\erich\Desktop\Misc Data\Users.txt")) ' Generates a list of users to be inserted into dropdown box on Form2 from a text file in a specified file location ! USER NOTE: MUST SPECIFY FILE LOCATION MANUALLY !
         Form2.ShowDialog()
 
     End Sub
@@ -32,8 +32,8 @@ Public Class Form1
 
         Else
 
-            MessageBox.Show("Data Inserted into database. CSV file updated.") ' Confirms that the command has been executed and sends data to MySQL database, creates or updates a text file of a specified location
-            My.Computer.FileSystem.WriteAllText("C:\Users\erich\Desktop\DataDump\test.txt", Environment.NewLine + Txt_Date.Text & "," & Form2.Cbox_User.Text & "," & Txt_Client.Text & "," & Cbox_Product.Text & "," & Txt_Total.Text, True)
+            MessageBox.Show("Data Inserted into database. CSV file updated.") ' Confirms that the command has been executed and sends data to MySQL database, creates or updates a text file of a specified location 
+            My.Computer.FileSystem.WriteAllText("C:\Users\erich\Desktop\DataDump\test.txt", Environment.NewLine + Txt_Date.Text & "," & Form2.Cbox_User.Text & "," & Txt_Client.Text & "," & Cbox_Product.Text & "," & Txt_Total.Text, True) '! USER NOTE: MUST SPECIFY FILE LOCATION MANUALLY !
             command.ExecuteNonQuery()
 
         End If
@@ -63,11 +63,11 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Btn_ViewSales.Click
+    Private Sub Button_ViewSales_Click(sender As Object, e As EventArgs) Handles Btn_ViewSales.Click
 
-        Form3.Cbox_SalesPerson2.Items.AddRange(File.ReadAllLines("C:\Users\erich\Desktop\Misc Data\Users.txt")) ' Generates a list of users from a specified file location
-        Form3.Cbox_Product2.Items.AddRange(File.ReadAllLines("C:\Users\erich\Desktop\Misc Data\Products.txt")) ' Generates a list of products from a specified file location
-        Dim clientData As New MySqlDataAdapter("select distinct client from test.orders order by client asc", connection)  ' Generates a list of clients from using a SQL statement
+        Form3.Cbox_SalesPerson2.Items.AddRange(File.ReadAllLines("C:\Users\erich\Desktop\Misc Data\Users.txt")) ' Generates a list of users from a specified file location ! USER NOTE: MUST SPECIFY FILE LOCATION MANUALLY !
+        Form3.Cbox_Product2.Items.AddRange(File.ReadAllLines("C:\Users\erich\Desktop\Misc Data\Products.txt")) ' Generates a list of products from a specified file location ! USER NOTE: MUST SPECIFY FILE LOCATION MANUALLY !
+        Dim clientData As New MySqlDataAdapter("select distinct client from test.orders order by client asc", connection)  ' Generates a list of clients using a SQL statement
         Dim clientSelect As New DataTable
         clientData.Fill(clientSelect)
         Form3.Cbox_Client2.DisplayMember = "client"
@@ -80,4 +80,7 @@ Public Class Form1
         Txt_Date.Text = DateTime.Now.Date.ToString("yyyy/MM/dd") ' Inserts today's  date into the "Date" field
     End Sub
 
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
