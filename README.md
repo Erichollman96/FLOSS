@@ -21,8 +21,11 @@ This application also writes to a CSV file in a specified location.
 PRIORITY 1-
 Certain features require specific naming criteria within the code, this is being worked on... 
 
-1/21/2020 update - operational, doing QA to ensure user errors do not crash the program...
+1/21/2020 update
 
+- operational, doing QA to ensure user errors do not crash the program before updating master branch...
+
+- updated source code comments to show where users must change code to make the program operational. CTRL+F for "USER NOTE"
 
 
 PRIORITY 2-
