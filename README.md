@@ -38,8 +38,12 @@ Certain features require specific naming criteria within the code, this is being
 
 - updated source code comments to show where users must change code to make the program operational. CTRL+F for "USER NOTE"
 
-
 PRIORITY 2-
+
+Saving user settings (file paths)
+
+
+PRIORITY 3-
 
 Current database structure is flat format. This is to be updated to a star schema...
 
