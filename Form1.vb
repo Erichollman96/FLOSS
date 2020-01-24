@@ -6,14 +6,14 @@ Public Class Form1
 
     Dim connection As New MySqlConnection("server=localhost; user=root; password=; database=test;")  ' Connects to MySQL Database. ! USER NOTE: YOUR DATABASE NAME MUST MATCH !
 
-    Private Sub btnSignIn1_Click(sender As Object, e As EventArgs) Handles Btn_SignIn.Click
+    Private Sub BtnSignIn1_Click(sender As Object, e As EventArgs) Handles Btn_SignIn.Click
 
-        Form2.Cbox_User.Items.AddRange(File.ReadAllLines("C:\Users\erich\Desktop\Misc Data\Users.txt")) ' Generates a list of users to be inserted into dropdown box on Form2 from a text file in a specified file location ! USER NOTE: MUST SPECIFY FILE LOCATION MANUALLY !
+        Form2.Cbox_User.Items.AddRange(File.ReadAllLines(Form4.Txt_Salespeople.Text)) ' Generates a list of users to be inserted into dropdown box on Form2 from a text file in a specified file location
         Form2.ShowDialog()
 
     End Sub
 
-    Public Sub btn_submit_Click(sender As Object, e As EventArgs) Handles Btn_Submit.Click
+    Public Sub Btn_Submit_Click(sender As Object, e As EventArgs) Handles Btn_Submit.Click
 
         Dim command As New MySqlCommand("INSERT INTO `Orders`(Date, SalesPerson, Client, Product, Total) VALUES ('" & Txt_Date.Text & "','" & Form2.Cbox_User.Text & "','" & Txt_Client.Text & "','" & Cbox_Product.Text & "','" & Txt_Total.Text & "')", connection) ' SQL statement to send a sale record to database with values from textboxes
         Dim dateString As String = Txt_Date.Text
@@ -42,7 +42,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles Btn_Close.Click
+    Private Sub BtnClose_Click(sender As Object, e As EventArgs) Handles Btn_Close.Click
         Close() ' Closes the entire application
     End Sub
 
@@ -63,10 +63,10 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub Button_ViewSales_Click(sender As Object, e As EventArgs) Handles Btn_ViewSales.Click
+    Private Sub Btn_ViewSales_Click(sender As Object, e As EventArgs) Handles Btn_ViewSales.Click
 
-        Form3.Cbox_SalesPerson2.Items.AddRange(File.ReadAllLines("C:\Users\erich\Desktop\Misc Data\Users.txt")) ' Generates a list of users from a specified file location ! USER NOTE: MUST SPECIFY FILE LOCATION MANUALLY !
-        Form3.Cbox_Product2.Items.AddRange(File.ReadAllLines("C:\Users\erich\Desktop\Misc Data\Products.txt")) ' Generates a list of products from a specified file location ! USER NOTE: MUST SPECIFY FILE LOCATION MANUALLY !
+        Form3.Cbox_SalesPerson2.Items.AddRange(File.ReadAllLines(Form4.Txt_Salespeople.Text)) ' Generates a list of users from a specified file location 
+        Form3.Cbox_Product2.Items.AddRange(File.ReadAllLines(Form4.Txt_Products.Text)) ' Generates a list of products from a specified file location 
         Dim clientData As New MySqlDataAdapter("select distinct client from test.orders order by client asc", connection)  ' Generates a list of clients using a SQL statement
         Dim clientSelect As New DataTable
         clientData.Fill(clientSelect)
@@ -76,11 +76,18 @@ Public Class Form1
         Form3.ShowDialog()
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Btn_Today.Click
+    Private Sub Menu_SetupWizard_Click(sender As Object, e As EventArgs) Handles Menu_SetupWizard.Click
+        Form4.ShowDialog()
+
+    End Sub
+
+    Private Sub Btn1_Click_1(sender As Object, e As EventArgs) Handles Btn_Today.Click
         Txt_Date.Text = DateTime.Now.Date.ToString("yyyy/MM/dd") ' Inserts today's  date into the "Date" field
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Menu_About_Click(sender As Object, e As EventArgs) Handles Menu_About.Click
+
+        Process.Start("https://github.com/Erichollman96/FOSS-sales/blob/master/README.md")
 
     End Sub
 End Class
