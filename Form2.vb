@@ -28,8 +28,8 @@ Public Class Form2
 
         ElseIf (connection.State <> ConnectionState.Closed) And Cbox_User.Text <> "" Then ' Checks if the user has a valid connection to the database and has selected a user from the dropdown lost
 
-            Form1.Cbox_Product.Items.AddRange(File.ReadAllLines("C:\Users\erich\Desktop\Misc Data\Products.txt")) ' Adds Products to "Product" dropdown on Form1 ! USER NOTE: MUST SPECIFY FILE LOCATION MANUALLY !
-            MessageBox.Show("User signed in as " + Cbox_User.Text) ' Confirms that the user has signed in as the user they selected
+            Form1.Cbox_Product.Items.AddRange(File.ReadAllLines(Form4.Txt_Products.Text)) ' Adds Products to "Product" dropdown on Form1 
+            MessageBox.Show("User signed in as " + Cbox_User.Text) ' Prompts user that the user has signed in as the user they selected 
             Form1.Lbl_ActiveUser.Text = Cbox_User.Text '  Enables controls on Form1
             Form1.Btn_SignIn.Hide()
             Form1.Lbl_Client.Enabled = True
