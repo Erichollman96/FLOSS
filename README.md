@@ -36,8 +36,6 @@ Certain features require specific naming criteria within the code, this is being
 
 - Users must select file locations through the "Setup Wizard". This is to be expanded...
 
-- Life is demanding more of my time and progress is slowing down... Maybe one update a week
-
 PRIORITY 2-
 
 Saving user settings (file paths)...
