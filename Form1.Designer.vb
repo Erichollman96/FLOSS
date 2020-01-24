@@ -39,12 +39,19 @@ Partial Class Form1
         Me.Btn_ViewSales = New System.Windows.Forms.Button()
         Me.Cbox_Product = New System.Windows.Forms.ComboBox()
         Me.Btn_Today = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Menu_About = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SetupToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Menu_SetupWizard = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Txt_Client
         '
         Me.Txt_Client.Enabled = False
-        Me.Txt_Client.Location = New System.Drawing.Point(87, 38)
+        Me.Txt_Client.Location = New System.Drawing.Point(81, 66)
         Me.Txt_Client.Name = "Txt_Client"
         Me.Txt_Client.Size = New System.Drawing.Size(121, 20)
         Me.Txt_Client.TabIndex = 0
@@ -52,7 +59,7 @@ Partial Class Form1
         'Txt_Total
         '
         Me.Txt_Total.Enabled = False
-        Me.Txt_Total.Location = New System.Drawing.Point(87, 90)
+        Me.Txt_Total.Location = New System.Drawing.Point(81, 118)
         Me.Txt_Total.Name = "Txt_Total"
         Me.Txt_Total.Size = New System.Drawing.Size(121, 20)
         Me.Txt_Total.TabIndex = 2
@@ -61,7 +68,7 @@ Partial Class Form1
         '
         Me.Txt_Date.Enabled = False
         Me.Txt_Date.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.Txt_Date.Location = New System.Drawing.Point(87, 116)
+        Me.Txt_Date.Location = New System.Drawing.Point(81, 144)
         Me.Txt_Date.Name = "Txt_Date"
         Me.Txt_Date.Size = New System.Drawing.Size(121, 20)
         Me.Txt_Date.TabIndex = 3
@@ -70,7 +77,7 @@ Partial Class Form1
         '
         Me.Lbl_Client.AutoSize = True
         Me.Lbl_Client.Enabled = False
-        Me.Lbl_Client.Location = New System.Drawing.Point(43, 41)
+        Me.Lbl_Client.Location = New System.Drawing.Point(37, 69)
         Me.Lbl_Client.Name = "Lbl_Client"
         Me.Lbl_Client.Size = New System.Drawing.Size(33, 13)
         Me.Lbl_Client.TabIndex = 4
@@ -80,7 +87,7 @@ Partial Class Form1
         '
         Me.Lbl_Product.AutoSize = True
         Me.Lbl_Product.Enabled = False
-        Me.Lbl_Product.Location = New System.Drawing.Point(43, 64)
+        Me.Lbl_Product.Location = New System.Drawing.Point(37, 92)
         Me.Lbl_Product.Name = "Lbl_Product"
         Me.Lbl_Product.Size = New System.Drawing.Size(44, 13)
         Me.Lbl_Product.TabIndex = 5
@@ -90,7 +97,7 @@ Partial Class Form1
         '
         Me.Lbl_Total.AutoSize = True
         Me.Lbl_Total.Enabled = False
-        Me.Lbl_Total.Location = New System.Drawing.Point(43, 90)
+        Me.Lbl_Total.Location = New System.Drawing.Point(37, 118)
         Me.Lbl_Total.Name = "Lbl_Total"
         Me.Lbl_Total.Size = New System.Drawing.Size(31, 13)
         Me.Lbl_Total.TabIndex = 6
@@ -100,7 +107,7 @@ Partial Class Form1
         '
         Me.Lbl_Date.AutoSize = True
         Me.Lbl_Date.Enabled = False
-        Me.Lbl_Date.Location = New System.Drawing.Point(43, 116)
+        Me.Lbl_Date.Location = New System.Drawing.Point(37, 144)
         Me.Lbl_Date.Name = "Lbl_Date"
         Me.Lbl_Date.Size = New System.Drawing.Size(30, 13)
         Me.Lbl_Date.TabIndex = 7
@@ -109,7 +116,7 @@ Partial Class Form1
         'Btn_Submit
         '
         Me.Btn_Submit.Enabled = False
-        Me.Btn_Submit.Location = New System.Drawing.Point(105, 142)
+        Me.Btn_Submit.Location = New System.Drawing.Point(99, 170)
         Me.Btn_Submit.Name = "Btn_Submit"
         Me.Btn_Submit.Size = New System.Drawing.Size(75, 23)
         Me.Btn_Submit.TabIndex = 8
@@ -127,7 +134,7 @@ Partial Class Form1
         '
         'Btn_SignIn
         '
-        Me.Btn_SignIn.Location = New System.Drawing.Point(214, 9)
+        Me.Btn_SignIn.Location = New System.Drawing.Point(208, 37)
         Me.Btn_SignIn.Name = "Btn_SignIn"
         Me.Btn_SignIn.Size = New System.Drawing.Size(80, 25)
         Me.Btn_SignIn.TabIndex = 10
@@ -137,7 +144,7 @@ Partial Class Form1
         'Lbl_User
         '
         Me.Lbl_User.AutoSize = True
-        Me.Lbl_User.Location = New System.Drawing.Point(12, 9)
+        Me.Lbl_User.Location = New System.Drawing.Point(6, 37)
         Me.Lbl_User.Name = "Lbl_User"
         Me.Lbl_User.Size = New System.Drawing.Size(65, 13)
         Me.Lbl_User.TabIndex = 11
@@ -146,7 +153,7 @@ Partial Class Form1
         'Lbl_ActiveUser
         '
         Me.Lbl_ActiveUser.AutoSize = True
-        Me.Lbl_ActiveUser.Location = New System.Drawing.Point(83, 9)
+        Me.Lbl_ActiveUser.Location = New System.Drawing.Point(77, 37)
         Me.Lbl_ActiveUser.Name = "Lbl_ActiveUser"
         Me.Lbl_ActiveUser.Size = New System.Drawing.Size(115, 13)
         Me.Lbl_ActiveUser.TabIndex = 12
@@ -172,7 +179,7 @@ Partial Class Form1
         Me.Cbox_Product.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbox_Product.Enabled = False
         Me.Cbox_Product.FormattingEnabled = True
-        Me.Cbox_Product.Location = New System.Drawing.Point(87, 63)
+        Me.Cbox_Product.Location = New System.Drawing.Point(81, 91)
         Me.Cbox_Product.Name = "Cbox_Product"
         Me.Cbox_Product.Size = New System.Drawing.Size(121, 21)
         Me.Cbox_Product.Sorted = True
@@ -181,12 +188,51 @@ Partial Class Form1
         'Btn_Today
         '
         Me.Btn_Today.Enabled = False
-        Me.Btn_Today.Location = New System.Drawing.Point(214, 116)
+        Me.Btn_Today.Location = New System.Drawing.Point(208, 144)
         Me.Btn_Today.Name = "Btn_Today"
         Me.Btn_Today.Size = New System.Drawing.Size(80, 23)
         Me.Btn_Today.TabIndex = 15
         Me.Btn_Today.Text = "Today's Date"
         Me.Btn_Today.UseVisualStyleBackColor = True
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.SetupToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(405, 24)
+        Me.MenuStrip1.TabIndex = 19
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Menu_About})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'Menu_About
+        '
+        Me.Menu_About.Name = "Menu_About"
+        Me.Menu_About.Size = New System.Drawing.Size(180, 22)
+        Me.Menu_About.Text = "About"
+        '
+        'SetupToolStripMenuItem
+        '
+        Me.SetupToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Menu_SetupWizard})
+        Me.SetupToolStripMenuItem.Name = "SetupToolStripMenuItem"
+        Me.SetupToolStripMenuItem.Size = New System.Drawing.Size(49, 20)
+        Me.SetupToolStripMenuItem.Text = "Setup"
+        '
+        'Menu_SetupWizard
+        '
+        Me.Menu_SetupWizard.Name = "Menu_SetupWizard"
+        Me.Menu_SetupWizard.Size = New System.Drawing.Size(180, 22)
+        Me.Menu_SetupWizard.Text = "Setup Wizard"
         '
         'Form1
         '
@@ -208,8 +254,11 @@ Partial Class Form1
         Me.Controls.Add(Me.Txt_Date)
         Me.Controls.Add(Me.Txt_Total)
         Me.Controls.Add(Me.Txt_Client)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -231,4 +280,10 @@ Partial Class Form1
     Friend WithEvents Btn_ViewSales As Button
     Friend WithEvents Cbox_Product As ComboBox
     Friend WithEvents Btn_Today As Button
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Menu_About As ToolStripMenuItem
+    Friend WithEvents SetupToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Menu_SetupWizard As ToolStripMenuItem
 End Class
