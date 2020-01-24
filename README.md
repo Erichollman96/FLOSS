@@ -30,7 +30,7 @@ This application was developed using Visual Studio 2019, written in VB.NET, usin
 This application also writes to a CSV file in a specified location.
 
 PRIORITY 1-
-Certain features require specific naming criteria within the code, this is being worked on... 
+Certain features require specific naming criteria within the code, this is being worked on...
 
 1/21/2020 update
 
@@ -38,10 +38,15 @@ Certain features require specific naming criteria within the code, this is being
 
 - updated source code comments to show where users must change code to make the program operational. CTRL+F for "USER NOTE"
 
+1/24/2020 update
+
+- Users must select file locations through the "Setup Wizard". This is to be expanded...
+
+- Life is demanding more of my time and progress is slowing down... Maybe one update a week
+
 PRIORITY 2-
 
-Saving user settings (file paths)
-
+Saving user settings (file paths)...
 
 PRIORITY 3-
 
