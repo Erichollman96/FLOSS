@@ -29,6 +29,8 @@ This application was developed using Visual Studio 2019, written in VB.NET, usin
 
 This application also writes to a CSV file in a specified location.
 
+______________________________________________________________________________________
+
 PRIORITY 1-
 Certain features require specific naming criteria within the code, this is being worked on...
 
@@ -36,13 +38,23 @@ Certain features require specific naming criteria within the code, this is being
 
 - Users must select file locations through the "Setup Wizard". This is to be expanded...
 
+3/1/2020 update
+ - Users are now free to select file locations and enter usernames/passwords for database connection
+
 PRIORITY 2-
 
 Saving user settings (file paths)...
 
+3/1/2020 update
+
+ - File paths for populating fields are now changable through the Setup Wizard.
+ - Users may now change connection string with username/passwords according to the usernames/passwords for their database
+
 PRIORITY 3-
 
 Current database structure is flat format. This is to be updated to a star schema...
+
+_________________________________________________________________________________________
 
 XAMPP Download: https://www.apachefriends.org/download.html
 
