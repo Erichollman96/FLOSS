@@ -76,7 +76,7 @@ Partial Class Form2
         Me.Controls.Add(Me.Cbox_User)
         Me.Controls.Add(Me.lblUser)
         Me.Name = "Form2"
-        Me.Text = "Form2"
+        Me.Text = "Sign In"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
