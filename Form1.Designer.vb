@@ -162,7 +162,7 @@ Partial Class Form1
         'Timer1
         '
         Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 10000
+        Me.Timer1.Interval = 300000
         '
         'Btn_ViewSales
         '
@@ -218,7 +218,7 @@ Partial Class Form1
         'Menu_About
         '
         Me.Menu_About.Name = "Menu_About"
-        Me.Menu_About.Size = New System.Drawing.Size(180, 22)
+        Me.Menu_About.Size = New System.Drawing.Size(107, 22)
         Me.Menu_About.Text = "About"
         '
         'SetupToolStripMenuItem
@@ -231,7 +231,7 @@ Partial Class Form1
         'Menu_SetupWizard
         '
         Me.Menu_SetupWizard.Name = "Menu_SetupWizard"
-        Me.Menu_SetupWizard.Size = New System.Drawing.Size(180, 22)
+        Me.Menu_SetupWizard.Size = New System.Drawing.Size(143, 22)
         Me.Menu_SetupWizard.Text = "Setup Wizard"
         '
         'Form1
@@ -256,7 +256,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Txt_Client)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Submit Records"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
