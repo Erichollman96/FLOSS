@@ -130,7 +130,7 @@ Partial Class Form3
         Me.Controls.Add(Me.Btn_Search)
         Me.Controls.Add(Me.Datagrid_SQL)
         Me.Name = "Form3"
-        Me.Text = "Form3"
+        Me.Text = "Search For Records"
         CType(Me.Datagrid_SQL, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
