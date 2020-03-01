@@ -4,13 +4,17 @@ Imports MySql.Data.MySqlClient
 Imports System.IO
 Public Class Form1
 
-    Dim connection As New MySqlConnection("server=localhost; user=root; password=; database=test;")  ' Connects to MySQL Database. ! USER NOTE: YOUR DATABASE NAME MUST MATCH !
+    Dim connection As New MySqlConnection("server=" & Form5.Txt_ServerName.Text & "; user= " & Form5.Txt_DBUsername.Text & "; password=" & Form5.Txt_DBPassword.Text & "; database=" & Form5.Txt_DBName.Text & ";")  ' Connects to MySQL Database. ! USER NOTE: YOUR DATABASE NAME MUST MATCH !
 
     Private Sub BtnSignIn1_Click(sender As Object, e As EventArgs) Handles Btn_SignIn.Click
 
-        Form2.Cbox_User.Items.AddRange(File.ReadAllLines(Form4.Txt_Salespeople.Text)) ' Generates a list of users to be inserted into dropdown box on Form2 from a text file in a specified file location
-        Form2.ShowDialog()
+        If String.IsNullOrEmpty(Form4.Txt_Clients.Text) Or String.IsNullOrEmpty(Form4.Txt_CSV.Text) Or String.IsNullOrEmpty(Form4.Txt_Products.Text) Or String.IsNullOrEmpty(Form4.Txt_Users.Text) Then
+            MessageBox.Show("Please complete the initial setup before continuing.")
+        Else
+            Form2.Cbox_User.Items.AddRange(File.ReadAllLines(Form4.Txt_Users.Text)) ' Generates a list of users to be inserted into dropdown box on Form2 from a text file in a specified file location
+            Form2.ShowDialog()
 
+        End If
     End Sub
 
     Public Sub Btn_Submit_Click(sender As Object, e As EventArgs) Handles Btn_Submit.Click
@@ -65,7 +69,7 @@ Public Class Form1
 
     Private Sub Btn_ViewSales_Click(sender As Object, e As EventArgs) Handles Btn_ViewSales.Click
 
-        Form3.Cbox_SalesPerson2.Items.AddRange(File.ReadAllLines(Form4.Txt_Salespeople.Text)) ' Generates a list of users from a specified file location 
+        Form3.Cbox_SalesPerson2.Items.AddRange(File.ReadAllLines(Form4.Txt_Users.Text)) ' Generates a list of users from a specified file location 
         Form3.Cbox_Product2.Items.AddRange(File.ReadAllLines(Form4.Txt_Products.Text)) ' Generates a list of products from a specified file location 
         Dim clientData As New MySqlDataAdapter("select distinct client from test.orders order by client asc", connection)  ' Generates a list of clients using a SQL statement
         Dim clientSelect As New DataTable
@@ -90,4 +94,5 @@ Public Class Form1
         Process.Start("https://github.com/Erichollman96/FOSS-sales/blob/master/README.md")
 
     End Sub
+
 End Class
