@@ -1,5 +1,23 @@
-Download and install the lastest .NET-Connector from www.mysql.com.
+Follow these instructions to ensure the application runs correctly.
 
-Add the MySQL.Data in Visual Studio to your project references (Menu: project, Properties, References).
+Pre-requisites: 
+Download and install the lastest .NET-Connector from www.mysql.com
+Access to MySql connection
+Visual Studio
 
-To be continued...
+STEP 1
+________________
+Create a new Windows Form App (.NET Framework) in Visual Studio
+
+STEP2
+________________
+Add the MySQL.Data in Visual Studio to your project references (Menu: project --> [application name] Properties --> References).
+
+STEP 3
+________________
+Create a total of 8 application settings (Salespeople, Product, Client, CSVFile, DBName, DBUsername, DBPassword, ServerName) 
+of type "string", scope "user" with empty value fields.
+
+STEP 4
+________________
+Create 5 forms in Visual Studio and copy and paste the code 
