@@ -1,0 +1,5 @@
+Download and install the lastest .NET-Connector from www.mysql.com.
+
+Add the MySQL.Data in Visual Studio to your project references (Menu: project, Properties, References).
+
+To be continued...
