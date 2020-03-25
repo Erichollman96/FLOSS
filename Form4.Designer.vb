@@ -1,9 +1,9 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form4
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form4
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Btn_SelectProducts = New System.Windows.Forms.Button()
         Me.Btn_SelectCSV = New System.Windows.Forms.Button()
@@ -131,43 +131,43 @@ Partial Class Form4
         '
         'Txt_Clients
         '
-        Me.Txt_Clients.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.WindowsAppTest.My.MySettings.Default, "Client", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.Txt_Clients.DataBindings.Add(New System.Windows.Forms.Binding("Text", My.MySettings.Default, "Client", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Txt_Clients.Enabled = False
         Me.Txt_Clients.Location = New System.Drawing.Point(25, 143)
         Me.Txt_Clients.Name = "Txt_Clients"
         Me.Txt_Clients.Size = New System.Drawing.Size(160, 20)
         Me.Txt_Clients.TabIndex = 30
-        Me.Txt_Clients.Text = Global.WindowsAppTest.My.MySettings.Default.Client
+        Me.Txt_Clients.Text = My.MySettings.Default.Client
         '
         'Txt_Users
         '
-        Me.Txt_Users.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.WindowsAppTest.My.MySettings.Default, "Salespeople", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.Txt_Users.DataBindings.Add(New System.Windows.Forms.Binding("Text", My.MySettings.Default, "Salespeople", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Txt_Users.Enabled = False
         Me.Txt_Users.Location = New System.Drawing.Point(25, 94)
         Me.Txt_Users.Name = "Txt_Users"
         Me.Txt_Users.Size = New System.Drawing.Size(160, 20)
         Me.Txt_Users.TabIndex = 26
-        Me.Txt_Users.Text = Global.WindowsAppTest.My.MySettings.Default.Salespeople
+        Me.Txt_Users.Text = My.MySettings.Default.Salespeople
         '
         'Txt_CSV
         '
-        Me.Txt_CSV.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.WindowsAppTest.My.MySettings.Default, "CSVFile", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.Txt_CSV.DataBindings.Add(New System.Windows.Forms.Binding("Text", My.MySettings.Default, "CSVFile", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Txt_CSV.Enabled = False
         Me.Txt_CSV.Location = New System.Drawing.Point(25, 193)
         Me.Txt_CSV.Name = "Txt_CSV"
         Me.Txt_CSV.Size = New System.Drawing.Size(160, 20)
         Me.Txt_CSV.TabIndex = 23
-        Me.Txt_CSV.Text = Global.WindowsAppTest.My.MySettings.Default.CSVFile
+        Me.Txt_CSV.Text = My.MySettings.Default.CSVFile
         '
         'Txt_Products
         '
-        Me.Txt_Products.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.WindowsAppTest.My.MySettings.Default, "Product", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.Txt_Products.DataBindings.Add(New System.Windows.Forms.Binding("Text", My.MySettings.Default, "Product", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Txt_Products.Enabled = False
         Me.Txt_Products.Location = New System.Drawing.Point(25, 51)
         Me.Txt_Products.Name = "Txt_Products"
         Me.Txt_Products.Size = New System.Drawing.Size(160, 20)
         Me.Txt_Products.TabIndex = 20
-        Me.Txt_Products.Text = Global.WindowsAppTest.My.MySettings.Default.Product
+        Me.Txt_Products.Text = My.MySettings.Default.Product
         '
         'Form4
         '
