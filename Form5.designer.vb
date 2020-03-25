@@ -1,9 +1,9 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form5
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form5
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.LblDatabase = New System.Windows.Forms.Label()
         Me.LblDatabaseUsername = New System.Windows.Forms.Label()
@@ -90,39 +90,39 @@ Partial Class Form5
         '
         'Txt_ServerName
         '
-        Me.Txt_ServerName.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.WindowsAppTest.My.MySettings.Default, "ServerName", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.Txt_ServerName.DataBindings.Add(New System.Windows.Forms.Binding("Text", My.MySettings.Default, "ServerName", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Txt_ServerName.Location = New System.Drawing.Point(143, 22)
         Me.Txt_ServerName.Name = "Txt_ServerName"
         Me.Txt_ServerName.Size = New System.Drawing.Size(100, 20)
         Me.Txt_ServerName.TabIndex = 5
-        Me.Txt_ServerName.Text = Global.WindowsAppTest.My.MySettings.Default.ServerName
+        Me.Txt_ServerName.Text = My.MySettings.Default.ServerName
         '
         'Txt_DBPassword
         '
-        Me.Txt_DBPassword.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.WindowsAppTest.My.MySettings.Default, "DBPassword", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.Txt_DBPassword.DataBindings.Add(New System.Windows.Forms.Binding("Text", My.MySettings.Default, "DBPassword", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Txt_DBPassword.Location = New System.Drawing.Point(143, 141)
         Me.Txt_DBPassword.Name = "Txt_DBPassword"
         Me.Txt_DBPassword.Size = New System.Drawing.Size(100, 20)
         Me.Txt_DBPassword.TabIndex = 2
-        Me.Txt_DBPassword.Text = Global.WindowsAppTest.My.MySettings.Default.DBPassword
+        Me.Txt_DBPassword.Text = My.MySettings.Default.DBPassword
         '
         'Txt_DBUsername
         '
-        Me.Txt_DBUsername.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.WindowsAppTest.My.MySettings.Default, "DBUsername", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.Txt_DBUsername.DataBindings.Add(New System.Windows.Forms.Binding("Text", My.MySettings.Default, "DBUsername", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Txt_DBUsername.Location = New System.Drawing.Point(143, 98)
         Me.Txt_DBUsername.Name = "Txt_DBUsername"
         Me.Txt_DBUsername.Size = New System.Drawing.Size(100, 20)
         Me.Txt_DBUsername.TabIndex = 1
-        Me.Txt_DBUsername.Text = Global.WindowsAppTest.My.MySettings.Default.DBUsername
+        Me.Txt_DBUsername.Text = My.MySettings.Default.DBUsername
         '
         'Txt_DBName
         '
-        Me.Txt_DBName.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.WindowsAppTest.My.MySettings.Default, "DBName", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.Txt_DBName.DataBindings.Add(New System.Windows.Forms.Binding("Text", My.MySettings.Default, "DBName", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Txt_DBName.Location = New System.Drawing.Point(143, 58)
         Me.Txt_DBName.Name = "Txt_DBName"
         Me.Txt_DBName.Size = New System.Drawing.Size(100, 20)
         Me.Txt_DBName.TabIndex = 0
-        Me.Txt_DBName.Text = Global.WindowsAppTest.My.MySettings.Default.DBName
+        Me.Txt_DBName.Text = My.MySettings.Default.DBName
         '
         'Form5
         '
