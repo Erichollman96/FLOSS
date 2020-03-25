@@ -11,7 +11,7 @@ Create a new Windows Form App (.NET Framework) in Visual Studio
 
 STEP2
 ________________
-Add the MySQL.Data in Visual Studio to your project references (Menu: project --> [application name] Properties --> References).
+Add the MySQL.Data.dll in Visual Studio to your project references (Menu: project --> [application name] Properties --> References).
 
 STEP 3
 ________________
