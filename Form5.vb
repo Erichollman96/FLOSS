@@ -10,4 +10,8 @@ Public Class Form5
         My.Settings.DBUsername = Txt_DBUsername.Text
         Close()
     End Sub
+
+    Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
