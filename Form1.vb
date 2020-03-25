@@ -7,11 +7,13 @@ Public Class Form1
     Dim connection As New MySqlConnection("server=" & Form5.Txt_ServerName.Text & "; user= " & Form5.Txt_DBUsername.Text & "; password=" & Form5.Txt_DBPassword.Text & "; database=" & Form5.Txt_DBName.Text & ";")  ' Connects to MySQL Database. ! USER NOTE: YOUR DATABASE NAME MUST MATCH !
 
     Private Sub BtnSignIn1_Click(sender As Object, e As EventArgs) Handles Btn_SignIn.Click
-
+        Dim listcount = Form2.Cbox_User.Items.Count
         If String.IsNullOrEmpty(Form4.Txt_Clients.Text) Or String.IsNullOrEmpty(Form4.Txt_CSV.Text) Or String.IsNullOrEmpty(Form4.Txt_Products.Text) Or String.IsNullOrEmpty(Form4.Txt_Users.Text) Then
             MessageBox.Show("Please complete the initial setup before continuing.")
-        Else
+        ElseIf listcount = 0 Then
             Form2.Cbox_User.Items.AddRange(File.ReadAllLines(Form4.Txt_Users.Text)) ' Generates a list of users to be inserted into dropdown box on Form2 from a text file in a specified file location
+            Form2.ShowDialog()
+        Else
             Form2.ShowDialog()
 
         End If
