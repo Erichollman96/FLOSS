@@ -117,18 +117,6 @@ Namespace My
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("")>  _
-        Public Property ServerName() As String
-            Get
-                Return CType(Me("ServerName"),String)
-            End Get
-            Set
-                Me("ServerName") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property Product() As String
             Get
                 Return CType(Me("Product"),String)
@@ -149,6 +137,18 @@ Namespace My
                 Me("Salespeople") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property ServerName() As String
+            Get
+                Return CType(Me("ServerName"),String)
+            End Get
+            Set
+                Me("ServerName") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
@@ -160,9 +160,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.WinDryRunApp.My.MySettings
+        Friend ReadOnly Property Settings() As Global.WinAppLive3._25._2020.My.MySettings
             Get
-                Return Global.WinDryRunApp.My.MySettings.Default
+                Return Global.WinAppLive3._25._2020.My.MySettings.Default
             End Get
         End Property
     End Module
