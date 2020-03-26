@@ -55,12 +55,18 @@ Public Class Form4
         My.Settings.Salespeople = Txt_Users.Text
         My.Settings.Client = Txt_Clients.Text
         My.Settings.CSVFile = Txt_CSV.Text
+        Me.Refresh()
         Close()
         Form5.ShowDialog()
 
+
     End Sub
 
-    Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Form4_Load(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Form4_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
