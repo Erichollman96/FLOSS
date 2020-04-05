@@ -1,0 +1,20 @@
+mkdir TestFolderEricHollman
+cd TestFolderEricHollman
+
+notepad ClientsTest.txt
+notepad ProductsTest.txt
+notepad SalespeopleTest.txt
+Notepad SalesRecordsTest.txt
+
+@echo Elmer Fudd > ClientsTest.txt
+@echo Forest Gump >> ClientsTest.txt
+@echo Terry Crews >> ClientsTest.txt
+
+@echo Golden Apple > ProductsTest.txt
+@echo Windows95 >> ProductsTest.txt
+@echo Floppy Disk >> ProductsTest.txt
+@echo Pet Rock >> ProductsTest.txt
+
+@echo Peyton Manning > SalespeopleTest.txt
+@echo Eddie Murphy >> SalespeopleTest.txt
+@echo Fred Flinstone >> SalespeopleTest.txt
