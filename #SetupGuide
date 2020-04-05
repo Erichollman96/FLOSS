@@ -20,7 +20,8 @@ Client, CSVFile, DBName, DBUsername, DBPassword, Product, Salespeople, ServerNam
 
 STEP 4
 ________________
-Create 4 additional forms in a Visual Studio with default names (Form2, Form3 etc.). Do not rename the forms. Copy and paste the code in to the corresponding forms.
+Create 4 additional forms in a Visual Studio with default names (Form2, Form3 etc.). Do not rename the forms. 
+Copy and paste the code in to the corresponding forms.
 
 STEP 5
 ________________
