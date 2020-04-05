@@ -33,9 +33,6 @@ This application also writes to a CSV file in a specified location.
 
 ______________________________________________________________________________________
 
-PRIORITY 1-
-Certain features require specific naming criteria within the code, this is being worked on...
-
 1/24/2020 update
 
 - Users must select file locations through the "Setup Wizard". This is to be expanded...
@@ -47,12 +44,19 @@ Certain features require specific naming criteria within the code, this is being
  - General bugfixes and optimizations
  - Added query results to query table form
  - Automatic date input added
+ 
+4/5/2020 update
+ - General bugfixes ( duplicates in drop-down menus )
+ - Creation of CommandLine commands to create files automatically uploaded to #optional document
+ - 
 
+Intended features to be implemented
+ - Select clients from dropdown or select new client
+ - Create new user for database with limited privileges within application
+ - Change database design from flat to star, using primary and foreign keys
+ - Monthly Report function
 _________________________________________________________________________________________
 
 XAMPP Download: https://www.apachefriends.org/download.html
 
 Visual Studio Download: https://visualstudio.microsoft.com/downloads/
-
-I'm always here to chat.
-Discord: ric#1327
