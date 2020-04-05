@@ -15,14 +15,15 @@ Add the MySQL.Data.dll in Visual Studio to your project references (Menu: projec
 
 STEP 3
 ________________
-Run the MYsqlcreate script in your MySql database. Please ensure the sql command is able to execute and no databases already exist
-with the same name. 
-
-STEP #
-________________
 Create the following 8 user-scoped settings in Settings.settings, each with Type "String" and empty values:
 Client, CSVFile, DBName, DBUsername, DBPassword, Product, Salespeople, ServerName
 
 STEP 4
 ________________
-Create 5 forms in Visual Studio. Do not rename the forms. Copy and paste the code in to the corresponding forms.
+Create 4 additional forms in a Visual Studio with default names (Form2, Form3 etc.). Do not rename the forms. Copy and paste the code in to the corresponding forms.
+
+STEP 5
+________________
+Run the MYsqlcreate script in your MySql database. Please ensure the sql command is able to execute and no databases already exist
+with the same name ( database name is test in the Mysqlcreate code by default ) 
+
