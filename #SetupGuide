@@ -32,3 +32,10 @@ ________________
 The application will need several text files on your desktop to run. You can manually create 4 files: Salespeople, Products, Clients and Sales Records.
 
 Alternatively, you can use the CommandLine commands in "#optional Create Text Files" to create the files automatically. 
+
+
+
+ADDITIONAL INFORMATION
+________________
+Settings.Designer.vb and App.Config do not need to be copy and pasted into your Visual Studio project, however your project should 
+change their Settings.Designer.vb and App.Config files to reflect the ones in this repository. 
