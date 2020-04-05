@@ -27,3 +27,8 @@ ________________
 Run the MYsqlcreate script in your MySql database. Please ensure the sql command is able to execute and no databases already exist
 with the same name ( database name is test in the Mysqlcreate code by default ) 
 
+Step 6
+________________
+The application will need several text files on your desktop to run. You can manually create 4 files: Salespeople, Products, Clients and Sales Records.
+
+Alternatively, you can use the CommandLine commands in "#optional Create Text Files" to create the files automatically. 
