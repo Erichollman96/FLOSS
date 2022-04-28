@@ -7,7 +7,7 @@ CREATE TABLE test.orders (
     SalesPerson char(255),
     Client char(255),
     Product varchar(255),
-    Quantity varchar(255),
+    Quantity int(16),
     Total decimal(16,2),
     PRIMARY KEY (ID)
 );
