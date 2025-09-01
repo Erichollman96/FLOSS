@@ -4,6 +4,7 @@ Pre-requisites:
 Download and install the lastest .NET-Connector from www.mysql.com
 Access to MySql connection
 Visual Studio
+.NET 7.0+
 
 STEP 1
 ________________
