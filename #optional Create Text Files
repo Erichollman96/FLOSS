@@ -1,5 +1,5 @@
-mkdir TestFolderEricHollman
-cd TestFolderEricHollman
+mkdir TestFolder
+cd TestFolder
 
 notepad ClientsTest.txt
 notepad ProductsTest.txt
