@@ -22,7 +22,7 @@ ________________________________________________________________________________
 
 1/24/2020 update
 
-- Users must select file locations through the "Setup Wizard". This is to be expanded...
+- Users must select file locations through the "Setup Wizard". This may be expanded...
 
 3/1/2020 update
  - Users are now free to select file locations and enter usernames/passwords for database connection
@@ -35,7 +35,6 @@ ________________________________________________________________________________
 4/5/2020 update
  - General bugfixes ( duplicates in drop-down menus )
  - Creation of CommandLine commands to create files automatically uploaded to #optional document
- - 
 
 Intended features to be implemented:
  - There are no current outstanding feature requests
