@@ -10,28 +10,16 @@ STEP 1
 ________________
 Create a new Windows Form App (.NET Framework) in Visual Studio
 
-STEP2
-________________
-Add the MySQL.Data.dll in Visual Studio to your project references (Menu: project --> [application name] Properties --> References).
-
-STEP 3
-________________
-Create the following 8 user-scoped settings in Settings.settings, each with Type "String" and empty values:
-Client, CSVFile, DBName, DBUsername, DBPassword, Product, Salespeople, ServerName
-
-STEP 4
-________________
-Create 4 additional forms in a Visual Studio with default names (Form2, Form3 etc.). Do not rename the forms. 
-Copy and paste the code in to the corresponding forms.
-
-STEP 5
+STEP 2
 ________________
 Run the MYsqlcreate script in your MySql database. Please ensure the sql command is able to execute and no databases already exist
 with the same name ( database name is test in the Mysqlcreate code by default ) 
 
-Step 6
+Step 3
 ________________
-The application will need several text files on your desktop to run. You can manually create 4 files: Salespeople, Products, Clients and Sales Records.
+The application will need several text files on your desktop to run.
+
+You can manually create 4 files: Salespeople, Products, Clients and Sales Records to run the test environment. Please set these to fit your environment for live environments. 
 
 Alternatively, you can use the CommandLine commands in "#optional Create Text Files" to create the files automatically. 
 
